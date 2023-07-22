@@ -10,10 +10,7 @@ const filterReducer = (state, action) => {
       //   (initialVal, curVal) => Math.max(initialVal, curVal),
       //   0
       // );
-      // console.log(
-      //   "🚀 ~ file: filterReducer.js ~ line 16 ~ filterReducer ~ maxPrice",
-      //   maxPrice
-      // );
+
 
       let maxPrice = Math.max(...priceArr);
       return {
