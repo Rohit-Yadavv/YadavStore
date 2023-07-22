@@ -8,7 +8,7 @@ import FormatPrice from "./Helpers/FormatPrice";
 const Cart = () => {
   const { cart, clearCart, total_price, shipping_fee } = useCartContext();
 
-  if (cart.length === 0) {
+  if (cart?.length === 0) {
     return (
       <EmptyDiv>
         <h3>No Cart in Item </h3>
@@ -28,7 +28,7 @@ const Cart = () => {
         </div>
         <hr />
         <div className="cart-item">
-          {cart.map((curElem) => {
+          {cart?.map((curElem) => {
             return <CartItem key={curElem.id} {...curElem} />;
           })}
         </div>
