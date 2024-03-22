@@ -120,7 +120,7 @@ ${"" /* resuable code section  */}
       text-transform: uppercase;
       color: #5138ee;
     }
-
+ 
    .caption {
       position: absolute;
       top: 15%;
